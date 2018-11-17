@@ -6,7 +6,7 @@ RCSwitch mySwitch = RCSwitch();
 void setup() {
   Serial.begin(115200);
   mySwitch.enableReceive(1);  // Receiver on inerrupt 1 => that is pin #3
-  mySwitch.enableTransmit(10);
+  mySwitch.enableTransmit(10);  //Transmitter on pin #10
   mySwitch.setProtocol(2, 450);
   mySwitch.setRepeatTransmit(15);
 }
